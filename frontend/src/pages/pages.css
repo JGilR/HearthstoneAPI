@@ -1,0 +1,881 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+div {
+    display: block;
+}
+
+.tittle-p {
+    color: #fff;
+    font-size: 18px;
+}
+
+.card-h1 {
+    margin-bottom: 10px;
+}
+
+/* Home Page css */
+
+.home-container {
+    background: url('https://d2vkoy1na2a6o6.cloudfront.net/_next/static/images/homepage_chalk_tile-7e161157dbaaa19b94ba3136d3addc44.jpg');
+    width: 100%;
+    max-width: 2600px;
+    min-height: 2600px;
+    height: 100vh;
+    position: absolute;
+    top: 0px;
+    z-index: -1000;
+}
+
+.header-container {
+    background: url('https://images.blz-contentstack.com/v3/assets/bltc965041283bac56c/blt473edb3b5ed3b1c5/5f9496381e7a070b44d23537/homepage_header_fallback.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 700px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0px 5%;
+    margin: 50px auto 0px;
+}
+
+.header-header {
+    height: 100%;
+    width: 990px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.header-header h1, p {
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.video-container {
+    max-width: 1643px;
+    width: 100%;
+    margin: 0px auto;
+    padding: 0px 5%;
+}
+
+.video-video {
+    height: 500px;
+    width: 100%;
+    position: relative;
+    padding-bottom: 20px;
+}
+
+.video-border {
+    border-image: url('https://images.blz-contentstack.com/v3/assets/bltc965041283bac56c/blt47cbe0118299f668/5f1ef3b8bb238f5556376422/homepage-frame-grid.png') 27 27 31 fill / 1 / 0 stretch;
+    border-width: 27px 27px 31px;
+    border-style: solid;
+}
+
+.video-border video {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* Cards Page css */
+
+.cards-container {
+    background: url('https://d2vkoy1na2a6o6.cloudfront.net/images/ui/parchment-f5126a8249a32eb235b139078b4cc13b5fb9d2c29b0e825569312681123d721a1f2e1addb4bad78f979933e561361e2ee2c5f5881ab4fef5385c66c6276c3b44.jpg');
+    width: 100%;
+    max-width: 2600px;
+    min-height: 2600px;
+    height: 100vh;
+    position: absolute;
+    top: 0px;
+    z-index: -1000;
+}
+
+.header-cards {
+    background: url('https://images.blz-contentstack.com/v3/assets/bltc965041283bac56c/blt42705147f327ad2d/5e46fcb1cc8de70b69efa92d/bg_cardgallery_header_standard.jpg?format=webp');
+    width: 100%;
+    height: 370px;
+    background-size: 100% 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1 {
+    color: #fff;
+}
+
+.cards-bar {
+    background: url('https://d2q63o9r0h0ohi.cloudfront.net/images/card-gallery/bg_filter_middle_tile-907853600f2b8dc11ae3acca94ff309f58b4959f380a6995e1b69b2d94f4bae5811b3ec588d56290599d59ddf6d00f0ce3fa9087c08ee8f7eabe843ed3646f9d.jpg');
+    padding: 11px 0px 0px;
+    position: relative;
+    z-index: 3;
+}
+
+.cards-bar::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    height: 60px;
+    width: 100%;
+    background: url('https://d2q63o9r0h0ohi.cloudfront.net/images/card-gallery/bg_filter_top_tile-2fc1e6f76b820b6c4134c00256a3c6210296b44f0e704fc3df57489c18a1ce91bb35b7ecd693c8d4b5c497c751f32e530105028ba52a88a7f13f8879ec342294.png')
+    center top repeat-x;
+}
+
+.cards-bar::after {
+    content: "";
+    position: absolute;
+    bottom: -15px;
+    height: 60px;
+    width: 100%;
+    background: url('https://d2q63o9r0h0ohi.cloudfront.net/images/card-gallery/bg_filter_bottom_tile-fe6e278438831fdcb9e897c1d90882eadf1c9c9edb05f9e729b8678c3da8ce386e4a5a03200d943c64837e7d113a8345b8424d05b7906570dde191e3eab8b4dd.png')
+    center top repeat-x;
+}
+
+.card-filter {
+    width: 100%;
+    max-width: 1600px;
+    padding: 0px 20px 0px 10px;
+    margin: 0px auto;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    position: relative;
+    z-index: 2;
+    height: 93px;
+}
+
+.main-cardsgrid {
+    padding: 0px 10px;
+    max-width: 1600px;
+    min-height: 500px;
+    margin: 0px auto;
+    position: relative;
+    z-index: 1;
+}
+
+.card-gridlayout {
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+.card-item {
+    justify-content: space-evenly;
+}
+.card-item {
+    display: flex;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    align-items: flex-end;
+    position: relative;
+}
+.card {
+    margin: 10px 20px 10px 20px;
+
+}
+.card img{
+    width: 250px;
+    height: auto;
+}
+
+
+
+/* Search Bar */
+.card-search {
+    margin-right: 30px;
+    position: relative;
+}
+
+.search-w {
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.search-inside {
+    height: 54px;
+    background: url('https://d2q63o9r0h0ohi.cloudfront.net/images/card-gallery/bg_component_middle_tile-44edb7499e3128e81acc4ba8fcb8dd3a59ff0ef302baef5f3a8211d96fc3c932e09c2e41386f8f1cdf437193ddad43af9699636559cac5b007ceef4b69046765.png') 
+    center center repeat-x;
+    padding: 6px 0px;
+    margin-left: 34px;
+    position: relative;
+}
+.search-inside::before {
+    content: "";
+    background: url('https://d2q63o9r0h0ohi.cloudfront.net/images/card-gallery/bg_component_left-6b7e7884670039ca95b4a3b1cb567ae78549f12e96751089591af6bcac0fbe40b23e4f8c93cd96229c7ebab9e67b23d0fb9e56d52a47e61fbbe753211d908e84.png') 
+    left center no-repeat;
+    height: 54px;
+    width: 34px;
+    position: absolute;
+    left: -30px;
+    top: 0px;
+}
+.search-inside::after {
+    content: "";
+    background: url('https://d2q63o9r0h0ohi.cloudfront.net/images/card-gallery/bg_component_right-7697450b1310903cfb15179cc963f0ca60a3e22c8b938361310770a6a39eb1480909c01980b85da8c7bf954766df5b0e03865b86d8980e5c46ac2e1d1198ccdf.png') 
+    right center no-repeat;
+    height: 54px;
+    width: 34px;
+    position: absolute;
+    right: -30px;
+    top: 0px;
+}
+
+.search-insidetext {
+    background: url('https://d2q63o9r0h0ohi.cloudfront.net/images/card-gallery/search_middle_stretch-ea2c7bde67b73e83e192c5a6a952519dfcad9041f4eada47653141ee06d51a316268240dd2d5cd1b8ba704ce64b213cf824f82c31ac05cc7dcedd5d584d793b9.png')
+    center center;
+    height: 42px;
+    position: relative;
+    z-index: 1;
+    margin: 0px -3px;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    transition: background-image 0.15s ease 0s;
+}
+.search-insidetext::before {
+    content: "";
+    background: url('https://d2q63o9r0h0ohi.cloudfront.net/images/card-gallery/search_left-3cb561cf585e6b6aded5dca35f8c16b3450db50cf6146e8699bd9a12117eede0b0e437db488e0a499755f2a442229c1c633522a26b08138350140aebab05ec31.png')
+    left center no-repeat;
+    height: 42px;
+    width: 24px;
+    position: absolute;
+    left: -24px;
+    top: 0px;
+    transition: background-image 0.15s ease 0s;
+}
+.search-insidetext::after {
+    content: "";
+    background: url('https://d2q63o9r0h0ohi.cloudfront.net/images/card-gallery/search_right-9e22f78542b7f45c1fbffb80d6fe8f54bdb3bf5ba2972d0d20ce586b86e5b896a79bd9dd811dd0a846253db72c4821bf53aa0f3ea2add1efec8e374e9a62497d.png')
+    right center no-repeat;
+    height: 42px;
+    width: 24px;
+    position: absolute;
+    right: -24px;
+    z-index: 0;
+    top: 0px;
+    transition: background-image 0.15s ease 0s;
+}
+
+.search-icon {
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    z-index: 1;
+    top: 9px;
+    right: -9px;
+    fill: gold;
+    background-size: contain;
+    cursor: pointer;
+}
+
+input[type=search] {
+    box-sizing: content-box;
+}
+.search-input {
+    border: 0px;
+    background-color: rgba(0,0,0,0);
+    color: #fff;
+    width: calc(100%-20px);
+}
+
+
+/* Mana Bar */
+.card-mana {
+    margin-right: 30px;
+    position: relative;
+}
+
+.mana-inside {
+    height: 54px;
+    background: url('https://d2q63o9r0h0ohi.cloudfront.net/images/card-gallery/bg_component_middle_tile-44edb7499e3128e81acc4ba8fcb8dd3a59ff0ef302baef5f3a8211d96fc3c932e09c2e41386f8f1cdf437193ddad43af9699636559cac5b007ceef4b69046765.png')
+    center center repeat-x;
+    padding: 6px 0px;
+    margin-left: 34px;
+    position: relative;
+}
+.mana-inside::before {
+    content: "";
+    background: url('https://d2q63o9r0h0ohi.cloudfront.net/images/card-gallery/bg_component_left-6b7e7884670039ca95b4a3b1cb567ae78549f12e96751089591af6bcac0fbe40b23e4f8c93cd96229c7ebab9e67b23d0fb9e56d52a47e61fbbe753211d908e84.png')
+    left center no-repeat;
+    height: 54px;
+    width: 34px;
+    position: absolute;
+    left: -30px;
+    top: 0px;
+}
+.mana-inside::after {
+    content: "";
+    background: url('https://d2q63o9r0h0ohi.cloudfront.net/images/card-gallery/bg_component_right-7697450b1310903cfb15179cc963f0ca60a3e22c8b938361310770a6a39eb1480909c01980b85da8c7bf954766df5b0e03865b86d8980e5c46ac2e1d1198ccdf.png')
+    right center no-repeat;
+    height: 54px;
+    width: 34px;
+    position: absolute;
+    right: -30px;
+    top: 0px;
+}
+
+.mana-insideblock {
+    background: url('https://d2q63o9r0h0ohi.cloudfront.net/images/card-gallery/search_middle_stretch-ea2c7bde67b73e83e192c5a6a952519dfcad9041f4eada47653141ee06d51a316268240dd2d5cd1b8ba704ce64b213cf824f82c31ac05cc7dcedd5d584d793b9.png')
+    center center;
+    height: 42px;
+    position: relative;
+    z-index: 1;
+    margin: 0px -3px;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    transition: background-image 0.15s ease 0s;
+}
+.mana-insideblock::before {
+    content: "";
+    background: url('https://d2q63o9r0h0ohi.cloudfront.net/images/card-gallery/search_left-3cb561cf585e6b6aded5dca35f8c16b3450db50cf6146e8699bd9a12117eede0b0e437db488e0a499755f2a442229c1c633522a26b08138350140aebab05ec31.png')
+    left center no-repeat;
+    height: 42px;
+    width: 24px;
+    position: absolute;
+    left: -24px;
+    top: 0px;
+    transition: background-image 0.15s ease 0s;
+}
+.mana-insideblock::after {
+    content: "";
+    background: url('https://d2q63o9r0h0ohi.cloudfront.net/images/card-gallery/search_right-9e22f78542b7f45c1fbffb80d6fe8f54bdb3bf5ba2972d0d20ce586b86e5b896a79bd9dd811dd0a846253db72c4821bf53aa0f3ea2add1efec8e374e9a62497d.png')
+    right center no-repeat;
+    height: 42px;
+    width: 24px;
+    position: absolute;
+    right: -24px;
+    z-index: 1;
+    top: 0px;
+    transition: background-image 0.15s ease 0s;
+}
+
+.mana-items {
+    margin: 0px -10px;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+.mana-button {
+    border: none;
+    width: 36px;
+    height: 34px;
+    background: url('https://d2q63o9r0h0ohi.cloudfront.net/images/card-gallery/icon_mana-25ac7617a8c7f5f992660316dd307cf16b36001d1fa9693a5aca46eb01db420041018a1bbed19055f963b2421b7f615b887e84e1508be42c7b74138ee4794829.png')
+    center center / contain no-repeat;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    position: relative;
+    z-index: 101;
+}
+.mana-button.last {
+    width: 60px;
+    background: url('https://d2q63o9r0h0ohi.cloudfront.net/images/card-gallery/icon_mana_plus-e388a8cbaa495d2a09e2a508288da0c9ffcdc43531087897355a36d79699749ae0196922b5cae9121c6dbff6bf656af097ca05ee916042f18b6d3a3c0af891b7.png') center center;
+}
+.mana-button:hover {
+    background: url('https://d2q63o9r0h0ohi.cloudfront.net/images/card-gallery/icon_mana_hoverselected-4b4e72e3465b332fb2535f178dac9db4f5a279dc6432c57bb309c2bd63229e4ef7fea8be1a8b1463410983c2316ae33f95a91a75d2407a6952551bb3c17b1478.png') center center / contain no-repeat;
+    transition: opacity 0.15s ease 0s;
+    cursor: pointer;
+}
+
+.mana-number {
+    color: rgb(255, 255, 255);
+    margin: 0px;
+    padding: 0px;
+    text-shadow: rgb(0 0 0) 2px 0px 0px, 
+                 rgb(0 0 0) 1.75517px 0.95885px 0px, 
+                 rgb(0 0 0) 1.0806px 1.68294px 0px, 
+                 rgb(0 0 0) 0.14147px 1.99499px 0px, 
+                 rgb(0 0 0) -0.83229px 1.81859px 0px, 
+                 rgb(0 0 0) -1.60229px 1.19694px 0px, 
+                 rgb(0 0 0) -1.97998px 0.28224px 0px, 
+                 rgb(0 0 0) -1.87291px -0.70157px 0px, 
+                 rgb(0 0 0) -1.30729px -1.5136px 0px, 
+                 rgb(0 0 0) -0.42159px -1.95506px 0px, 
+                 rgb(0 0 0) 0.56732px -1.91785px 0px, 
+                 rgb(0 0 0) 1.41734px -1.41108px 0px, 
+                 rgb(0 0 0) 1.92034px -0.55883px 0px;
+    position: relative;
+    white-space: nowrap;
+}
+
+
+/* Heroes page css */
+
+.wrapper {
+    min-height: 100%;
+    width: 100%;
+    max-width: 2600px;
+    margin: 0 auto;
+}
+
+.body {
+    position: relative;
+    min-height: 500px;
+    padding-bottom: 0px;
+    max-width: 2600px;
+    margin: auto;
+}
+
+.header-heroes {
+    background: url('https://d2q63o9r0h0ohi.cloudfront.net/images/common/wood-ca9c45d6997a89fcf2593cb29583e34d6aa63ef4d9d68b1541a7ce2e75af3eb9105bc40f1d4183017993b8b846439b5e9e7be6b4c472d6753f27c15fa8da48ea.jpg') rgb(97,67,38);
+    height: 400px;
+    width: 100%;
+    position: absolute;
+    top: -1px;
+    z-index: -1;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+}
+
+.header-gradient {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.4;
+    background: linear-gradient(transparent 0%, transparent 25%, black 75%);
+}
+
+.header-text {
+    max-width: 800px;
+    margin: 160px 5% 0px;
+    z-index: 2;
+}
+
+.header-text h1, p {
+    color: #fff;
+    text-align: center;
+}
+
+.header-text p {
+    margin: 20px 0;
+}
+
+.divider {
+    background: url('https://d2q63o9r0h0ohi.cloudfront.net/images/npe/general/divider_npe_general-9c33c383bca943c8c35d8e2e4cf2f132bff9c666b0b36cc81d69f18bcb8a5895bb4ecbbcb18dabcc43f20aede62267d9c3c6d2e9053a0b6a4ff42d6a3a635197.jpg')
+    center repeat-x transparent;
+    width: 100%;
+    height: 20px;
+    position: relative;
+    top: 390px;
+    margin-top: -1px;
+}
+
+
+.hero-list {
+    position: relative;
+    width: 100%;
+    min-height: 2600px;
+    top: 390px;
+    background: url('https://d2q63o9r0h0ohi.cloudfront.net/images/deckbuilder/bg_class_selector_tile-ed65a642d775c2c3668e96c52faa5a5689231767befd1e393e09c74e1feb73806abc5a49c9fc8d90255fa4d796baff12886fee91fa1e89e41d7611d11487d878.jpg')
+    left top repeat;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.hero-cards-container {
+    max-width: 1200px;
+    margin: 100px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    justify-content: center;
+    align-content: center;
+}
+
+.hero-card {
+    position: relative;
+    width: 215px;
+    height: 349px;
+    margin: 8px;
+}
+
+
+/* Demon Hunter*/
+.hero-card .card-demonhunter {
+    z-index: 0;
+    position: absolute;
+    top: 0;
+    left: 0px;
+    width: 215px;
+    height: 349px;
+    background: url('https://images.blz-contentstack.com/v3/assets/bltc965041283bac56c/bltfbee9c938d414fe3/5e5fec1a8902221b5e1dd5f0/heroes_classSelect_DH_static.png')
+    center center / contain no-repeat;
+}
+
+.hero-card .card-demonhunter:hover {
+    background: url('https://images.blz-contentstack.com/v3/assets/bltc965041283bac56c/bltbc7f0c14bbd98d13/5e6000c66427121bd6298271/heroes_classSelect_DH_hover.png')
+    center center / contain no-repeat;
+    cursor: pointer;
+}
+
+/* Druid */
+.hero-card .card-druid {
+    z-index: 0;
+    position: absolute;
+    top: 0;
+    left: 0px;
+    width: 215px;
+    height: 349px;
+    background: url('https://images.blz-contentstack.com/v3/assets/bltc965041283bac56c/blt8a140efea23544de/5e271e31486f10424527ac40/heroes_classSelect_druid_static.png')
+    center center / contain no-repeat;
+}
+
+.hero-card .card-druid:hover {
+    background: url('https://images.blz-contentstack.com/v3/assets/bltc965041283bac56c/bltce0b2647154c4b4e/5e271e317be0e73d40675e24/heroes_classSelect_druid_hover.png')
+    center center / contain no-repeat;
+    cursor: pointer;
+}
+
+/* Hunter */
+.hero-card .card-hunter {
+    z-index: 0;
+    position: absolute;
+    top: 0;
+    left: 0px;
+    width: 215px;
+    height: 349px;
+    background: url('https://images.blz-contentstack.com/v3/assets/bltc965041283bac56c/blte403920cfbb5d2a7/5e271e4f561a623cdc51fda4/heroes_classSelect_hunter_static.png')
+    center center / contain no-repeat;
+}
+
+.hero-card .card-hunter:hover {
+    background: url('https://images.blz-contentstack.com/v3/assets/bltc965041283bac56c/blt52e4af1e33a04b38/5e271e4f486f10424527ac46/heroes_classSelect_hunter_hover.png')
+    center center / contain no-repeat;
+    cursor: pointer;
+}
+
+/* Mage */
+.hero-card .card-mage {
+    z-index: 0;
+    position: absolute;
+    top: 0;
+    left: 0px;
+    width: 215px;
+    height: 349px;
+    background: url('https://images.blz-contentstack.com/v3/assets/bltc965041283bac56c/bltbec35c965683fae2/5e4f111a8d83401be1195ee8/heroes_classSelect_mage_static.png')
+    center center / contain no-repeat;
+}
+
+.hero-card .card-mage:hover {
+    background: url('https://images.blz-contentstack.com/v3/assets/bltc965041283bac56c/blt0fc0d0fef8c4b0ee/5e4f110ba9f0fb732c24c41d/heroes_classSelect_mage_hover.png')
+    center center / contain no-repeat;
+    cursor: pointer;
+}
+
+/* Warlock */
+.hero-card .card-warlock {
+    z-index: 0;
+    position: absolute;
+    top: 0;
+    left: 0px;
+    width: 215px;
+    height: 349px;
+    background: url('https://images.blz-contentstack.com/v3/assets/bltc965041283bac56c/blt754fac05dfaf5940/5e271e41a9cce63cb6048afd/heroes_classSelect_warlock_static.png')
+    center center / contain no-repeat;
+}
+
+.hero-card .card-warlock:hover {
+    background: url('https://images.blz-contentstack.com/v3/assets/bltc965041283bac56c/bltb4cc0e879fcedb8a/5e271e417be0e73d40675e2a/heroes_classSelect_warlock_hover.png')
+    center center / contain no-repeat;
+    cursor: pointer;
+}
+
+
+/* Paladin */
+.hero-card .card-paladin {
+    z-index: 0;
+    position: absolute;
+    top: 0;
+    left: 0px;
+    width: 215px;
+    height: 349px;
+    background: url('https://images.blz-contentstack.com/v3/assets/bltc965041283bac56c/blt2ed840dc349b2795/5e271e7bb8a6493cb7bd4444/heroes_classSelect_paladin_static.png')
+    center center / contain no-repeat;
+}
+
+.hero-card .card-paladin:hover {
+    background: url('https://images.blz-contentstack.com/v3/assets/bltc965041283bac56c/bltde746dfa45320f53/5e271e7b7c805841bb5f80cb/heroes_classSelect_paladin_hover.png')
+    center center / contain no-repeat;
+    cursor: pointer;
+}
+
+/* Priest */
+.hero-card .card-priest {
+    z-index: 0;
+    position: absolute;
+    top: 0;
+    left: 0px;
+    width: 215px;
+    height: 349px;
+    background: url('https://images.blz-contentstack.com/v3/assets/bltc965041283bac56c/blt2799a75da217871b/5e271e23486f10424527ac3a/heroes_classSelect_priest_static.png')
+    center center / contain no-repeat;
+}
+
+.hero-card .card-priest:hover {
+    background: url('https://images.blz-contentstack.com/v3/assets/bltc965041283bac56c/blta9d7d8a05365e477/5e271e23a9cce63cb6048af7/heroes_classSelect_priest_hover.png')
+    center center / contain no-repeat;
+    cursor: pointer;
+}
+
+/* Rogue */
+.hero-card .card-rogue {
+    z-index: 0;
+    position: absolute;
+    top: 0;
+    left: 0px;
+    width: 215px;
+    height: 349px;
+    background: url('https://images.blz-contentstack.com/v3/assets/bltc965041283bac56c/blt2b7abdc61cac09d6/5e271e6e991f1e3c5188ba88/heroes_classSelect_rogue_static.png')
+    center center / contain no-repeat;
+}
+
+.hero-card .card-rogue:hover {
+    background: url('https://images.blz-contentstack.com/v3/assets/bltc965041283bac56c/bltbcded2b184c91328/5e271e6ea9cce63cb6048b03/heroes_classSelect_rogue_hover.png')
+    center center / contain no-repeat;
+    cursor: pointer;
+}
+
+/* Shaman */
+.hero-card .card-shaman {
+    z-index: 0;
+    position: absolute;
+    top: 0;
+    left: 0px;
+    width: 215px;
+    height: 349px;
+    background: url('https://images.blz-contentstack.com/v3/assets/bltc965041283bac56c/blt4d6e7aff24e73106/5e20a231a9cce63cb6048882/heroes_shaman_tile_static.png')
+    center center / contain no-repeat;
+}
+
+.hero-card .card-shaman:hover {
+    background: url('https://images.blz-contentstack.com/v3/assets/bltc965041283bac56c/blt5b86ed089f5445dd/5e20a24871e37241baaaba09/heroes_shaman_tile_hover.png')
+    center center / contain no-repeat;
+    cursor: pointer;
+}
+
+/* Warrior */
+.hero-card .card-warrior {
+    z-index: 0;
+    position: absolute;
+    top: 0;
+    left: 0px;
+    width: 215px;
+    height: 349px;
+    background: url('https://images.blz-contentstack.com/v3/assets/bltc965041283bac56c/bltcedb8b995553ac63/5e271e5ed9ccad3d47b2eedb/heroes_classSelect_warrior_static.png')
+    center center / contain no-repeat;
+}
+
+.hero-card .card-warrior:hover {
+    background: url('https://images.blz-contentstack.com/v3/assets/bltc965041283bac56c/bltbe6ac8d5e898b1a3/5e271e5e7c805841bb5f80c5/heroes_classSelect_warrior_hover.png')
+    center center / contain no-repeat;
+    cursor: pointer;
+}
+
+
+/* Como jugar page css */
+.text-layout {
+    overflow-x: hidden;
+    width: 100%;
+    max-width: 2600px;
+    margin: -1px auto;
+    min-height: 1432px;
+    
+}
+
+.text-container {
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: flex-start;
+    -webkit-box-align: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    padding: 100px;
+    background: url('https://images.blz-contentstack.com/v3/assets/bltc965041283bac56c/blt5426602d2ba4c1ff/5f2db56f8ea4aa55f2329d23/bg_inkeeper-lessons.jpg')
+    center top / cover no-repeat  rgb(26, 18, 42);
+}
+
+.text-header {
+    max-width: 750px;
+    text-align: center;
+}
+
+.header-text2 {
+    color: #fff;
+    margin-top: 5px;
+}
+
+.text-p {
+    margin: 0;
+    color: #fff;
+    text-transform: uppercase;
+    font: 22px;
+}
+
+.text-h2 {
+    color: #fff;
+    font-size: 44px;
+}
+
+.texto-p {
+    margin-top: 0;
+    color: #fff;
+    margin-bottom: 1.5rem;
+    font: 16px Helvetica, Arial, sans-serif;
+}
+
+.ink-img {
+    margin-bottom: -5px;
+    border-style: none;
+}
+
+
+.text-comojugar {
+    position: relative;
+    max-width: 1080px;
+    border-radius: 6px;
+    background-color: rgb(231, 213, 167);
+}
+
+.text-comojugar::before {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    inset: 3px;
+    border: 3px solid rgb(128,101,67);
+    border-radius: 6px;
+}
+.text-comojugar::after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    inset: 8px;
+    border: 1px solid rgba(128,101,67,0.5);
+    border-radius: 6px;
+}
+
+.textmodule {
+    position: relative;
+    z-index: 2;
+    margin: 50px;
+}
+
+.tittle {
+    display: flex;
+    -webkit-box-pack: start;
+    justify-content: flex-start;
+    -webkit-box-align: center;
+    align-items: center;
+    position: relative;
+    margin-left: -65px;
+    z-index: 2;
+    height: 66px;
+    max-width: 559px;
+    background: url('https://images.blz-contentstack.com/v3/assets/bltc965041283bac56c/blt2a8e965fcff6d416/5f1f2c360cfe4555ebb39922/bg_title.png')
+    center center / contain no-repeat;
+}
+
+.tittle-h5 {
+    margin-left: 65px;
+    margin-bottom: 15px;
+    text-shadow: rgb(0 0 0) 2px 0px 0px, 
+                 rgb(0 0 0) 1.75517px 0.95885px 0px, 
+                 rgb(0 0 0) 1.0806px 1.68294px 0px, 
+                 rgb(0 0 0) 0.14147px 1.99499px 0px, 
+                 rgb(0 0 0) -0.83229px 1.81859px 0px, 
+                 rgb(0 0 0) -1.60229px 1.19694px 0px, 
+                 rgb(0 0 0) -1.97998px 0.28224px 0px, 
+                 rgb(0 0 0) -1.87291px -0.70157px 0px, 
+                 rgb(0 0 0) -1.30729px -1.5136px 0px, 
+                 rgb(0 0 0) -0.42159px -1.95506px 0px, 
+                 rgb(0 0 0) 0.56732px -1.91785px 0px, 
+                 rgb(0 0 0) 1.41734px -1.41108px 0px, 
+                 rgb(0 0 0) 1.92034px -0.55883px 0px;
+    color: #fff;
+}
+
+.img-textmodule {
+    float: right;
+    margin-right: -41px;
+}
+
+p {
+    color: black;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font: 16px Helvetica, Arial, sans-serif;
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+}
+
+.p-guide {
+    text-align: start;
+    text-shadow: none;
+    line-height: 1.5;
+}
+
+.subsection-tittle {
+    display: flex;
+    flex-direction: row;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+.subsection-tittle-tittle {
+    margin-left: 5px;
+    color: rgb(97,67,38);
+    text-shadow: none;
+    font-size: 20px;
+}
+
+.img-subsection {
+    margin-left: -5px;
+}
+
+a {
+    background-color: transparent;
+    color: #000000;
+}
+a.cardpopup {
+    text-decoration: none;
+}
+.cardpopup {
+    position: relative;
+    font-weight: 500;
+    display: -webkit-inline-flex;
+    display: inline-flex;
+    -webkit-box-align-self: center;
+    align-self: center;
+    vertical-align: top;
+    text-shadow: none;
+}
+
+.cardpopup-svg {
+    width: 20px;
+    height: 20px;
+    fill: #000000;
+    display: inline-block;
+    margin: auto 5px auto 0;
+}
+

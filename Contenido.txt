@@ -1,0 +1,46 @@
+Crear una pagina web como la de Hearthstone - https://playhearthstone.com/es-es
+-------------------------------------------
+El trabajo consiste en crear una pagina web de un juego de cartas (Hearthstone). Este juego cuenta con diferentes heroes con una habilidad distinta
+y unas cartas propias de cada uno de ellos. A su vez existen cartas neutrales que pueden utilizar todos los heroes.
+Cada carta pertenece a un conjunto (expansion), las cartas clasicas (del conjunto clasico) estan siempre presentes.
+
+- Crear bases de datos (Back-End):
+    - Heroes (diferentes clases de heroes)
+        * Name
+        * Class
+        * Description
+        * Hero_Power
+    - Cartas de clase (de cada heroe)
+    - Cartas neutrales (para todas las clases)
+    - Todas las cartas
+        * Name
+        * Type (spell, weapen, minion, hero, power)
+        * Class
+        * CardSet
+        * Rarity (common, rare, epic, legendary)
+        * Cost
+        * Attack
+        * Health
+        * Description
+        * Image
+        * Mechanics[]
+    - Cartas de conjunto
+    - ... (de momento)
+
+- Que incluye nuestra pagina web (Front-End):
+    - Una barra de navegacion (Juego, Cartas, Conjunto)
+    - La pagina Juego que incluye:
+        - ¿Que es Hearthstone?
+        - Como jugar (explicacion escrita y con videos)
+        - Heroes
+    - La pagina Cartas que incluye:
+        - Explicacion de lo que contiene la carta (Ataque, Vida, Mana, Descripcion, Rareza ...)
+        - Una galeria de todas las cartas se podra filtrar:
+            - Por conjunto (cardSet)
+            - Por clase (Class)
+            - Por mana (cost)
+            - Por nombre (name)
+    - La pagina Conjuntos que incluye:
+        - Informacion del conjunto
+        - Cartas de presentacion
+        - Novedades
